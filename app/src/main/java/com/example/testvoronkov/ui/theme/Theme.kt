@@ -44,21 +44,27 @@ fun MainThem(
         true->{
             when(style){
                 JetHabbitStyle.Purple -> purpleDarkPalette
+                JetHabbitStyle.Gradient -> GradientDarkPalette
+                JetHabbitStyle.Background -> BackgroundDarkPalette
                 //JetHabbitStyle.Blue -> blueDarkPalette
                 //JetHabbitStyle.Red -> redDarkPalette
                 //JetHabbitStyle.Green -> GreenDarkPalette
                 //JetHabbitStyle.Orange -> orangeDarkPalette
-                JetHabbitStyle.textPrimary -> TextPrimaryDarkPalette
+                JetHabbitStyle.TextPrimary -> TextPrimaryDarkPalette
+                JetHabbitStyle.SecondaryBackground -> secondaryBackgroundDarkPalette
             }
         }
         false->{
             when(style){
                 JetHabbitStyle.Purple -> purpleLightPalette
+                JetHabbitStyle.Gradient -> GradientLightPalette
+                JetHabbitStyle.Background -> BackgroundLightPalette
                 //JetHabbitStyle.Blue -> blueLightPalette
                 //JetHabbitStyle.Red -> redLightPalette
                 //JetHabbitStyle.Green -> GreenLightPalette
                 //JetHabbitStyle.Orange -> orangeLightPalette
-                JetHabbitStyle.textPrimary -> TextPrimaryLightPalette
+                JetHabbitStyle.TextPrimary -> TextPrimaryLightPalette
+                JetHabbitStyle.SecondaryBackground -> secondaryBackgroundLightPalette
             }
         }
     }

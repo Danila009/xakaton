@@ -4,14 +4,16 @@ import androidx.compose.ui.graphics.Color
 import android.graphics.drawable.shapes.Shape
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.staticCompositionLocalOf
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.unit.Dp
 import java.time.format.TextStyle
 
 data class JetHabbitColors (
     val primaryText:Color,
-    //val primaryBackground:Color,
+    val gradient:Brush,
+    val primaryBackground:Color,
     //val secondaryText:Color,
-    //val secondaryBackground:Color,
+    val secondaryBackground:Color,
     val tintColor:Color
     )
 
@@ -49,7 +51,7 @@ object JetHabbitTheme{
         get() = LocalJetHabbitImage.current
 }
 enum class JetHabbitStyle{
-    textPrimary,Purple
+    TextPrimary,Purple,Gradient,Background,SecondaryBackground
 }
 enum class JetHabbitSize{
     Small, Medium, Big

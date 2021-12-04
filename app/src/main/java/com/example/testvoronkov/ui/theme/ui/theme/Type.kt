@@ -1,32 +1,18 @@
-package com.example.testvoronkov.ui.theme
+package com.example.testvoronkov.ui.theme.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.testvoronkov.R
 
-val font = FontFamily(
-    Font(R.font.montserrat_light),
-)
-val body = FontFamily(
-    Font(R.font.montserrat_bold, FontWeight.Bold),
-)
-
+// Set of Material typography styles to start with
 val Typography = Typography(
-
     body1 = TextStyle(
-        fontFamily = font,
-        fontWeight = FontWeight.Normal
-    ),
-    body2 = TextStyle(
-        fontFamily = body,
-        fontWeight = FontWeight.Bold
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp
     )
-
     /* Other default text styles to override
     button = TextStyle(
         fontFamily = FontFamily.Default,

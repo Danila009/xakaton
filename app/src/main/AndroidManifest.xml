@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestVoronkov">
         <activity
+            android:name=".ui.theme.TestOpen"
+            android:exported="true"
+            android:label="@string/title_activity_test_open"
+            android:theme="@style/Theme.TestVoronkov.NoActionBar" />
+        <activity
+            android:name=".EventOpen"
+            android:exported="true"
+            android:label="@string/title_activity_event_open"
+            android:theme="@style/Theme.TestVoronkov.NoActionBar" />
+        <activity
             android:name=".Belakov"
             android:exported="false"
             android:label="@string/title_activity_belakov"
